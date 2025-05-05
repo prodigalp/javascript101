@@ -1,0 +1,74 @@
+:root {
+    --color-primary: lightgray;
+    --color-secondary: #FFF;
+    --color-gradient: linear-gradient(120deg, rgb(46, 185, 245), white);
+    --default-margin: 1rem;
+    --default-padding: 1rem;
+    --default-shadow: .2rem .2rem .2rem rgba(0,0,0,0.2);
+    --default-font: sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--color-gradient);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    font-family: var(--default-font);
+}
+.wrapper {
+    width: 500px;
+    max-width: 90%;
+    background: var(--color-secondary);
+    padding: var(--default-padding);
+    border-radius: .5rem;
+    box-shadow: var(--default-shadow);
+}
+.header {
+    font-size: 2rem;
+    /* background:rgb(46, 185, 245); */
+    background: #000;
+    color:rgb(46, 185, 245);
+    padding: .2rem;
+    /* color: #FFF; */
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+.num__inputs,
+.num__ans {
+    mArgin: .5rem 0 1.2rem 0;
+}
+label {
+    font-size: 1.1rem;    
+}
+.numOne,
+.numTwo,
+.numAns {
+    width: 100%;
+    padding: .7rem 1.2rem;
+    outline: none;
+    border-radius: .3rem;
+    border: none;
+    border: 1px SOLID #000;
+}
+.btnSze {
+    width: 10rem;
+    border: none;
+    outline: none;
+    padding: 1rem 1.2rem;
+    border-radius: .8rem;
+    font-size: 1rem;
+    background: #000;
+    color:rgb(46, 185, 245);
+}
+.num__button {
+    text-align: center;
+}
