@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primary: #FAF8CC;
+    --color-secondary: rgb(247, 241, 241);
+    --color-linear: linear-gradient(240deg, rgb(245, 128, 251), white);
+    --default-shadow: .2rem .2rem .2rem rgba(0,0,0,0.2);
+    --default-font: "Roboto", sans-serif;
+    --default-margin: 1rem;
+    --default-padding: 1rem;
+    --default-radius: .5rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--color-linear);
+    font-family: var(--default-font);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#wrapper {
+    background: var(--color-secondary);
+    width: 400px;
+    padding: var(--default-padding);
+    border-radius: var(--default-radius);
+    box-shadow: var(--default-shadow);
+}
+.header {
+    font-size: 1.3rem;
+    background: pink;
+    padding: .5rem;
+    color: #FFF;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px #000;
+    margin-bottom: 1rem;
+    border-radius: .5rem .5rem 0 0;
+}
+p {
+    padding: .5em 0;
+}
+.btnSize {
+    width: 8rem;
+    background: rgb(15, 154, 248);
+    border: none;
+    outline: none;
+    color: #FFF;
+    padding: 1rem .8rem;
+    border-radius: var(--default-radius);
+    font-size: 1rem;
+}
+.btnSize:hover {
+    background: black;
+    color: #FFF;
+    cursor: pointer;
+}
