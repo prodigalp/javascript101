@@ -1,0 +1,75 @@
+:root {
+    --color-primary: lightgray;
+    --color-secondary: #FFF;
+    --color-gradient: linear-gradient(100deg, rgb(76, 246, 102), white);
+    --default-font: sans-serif;
+    --default-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
+    --default-margin: 1rem;
+    --default-padding: 1rem;
+    --default-radius: .5rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--color-gradient);
+    font-family: var(--default-font);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.ledger{
+    background:rgb(1, 78, 13);
+    padding: var(--default-padding);
+    border-radius: .5rem;
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+.header {
+    background: #000;
+    /* color: rgb(76, 246, 102); */
+    color: rgb(255, 255, 255);
+    padding: calc( var(--default-padding) - .5rem); 
+    border-radius: .5rem .5rem 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+#wrapper {
+    width: 500px;
+    max-width: 90%;
+    background: var(--color-secondary);
+    padding: var(--default-padding);
+    box-shadow: var(--default-shadow);
+    border-radius: var(--default-radius);
+}
+.colNum {
+    padding: .5rem 0;
+    /* background:rgb(76, 246, 102) */
+}
+.numOne,
+.numTwo,
+.numAns {
+    padding: .5rem;
+    width: 100%;
+    font-size: 1rem;
+}
+.colbtn {
+    text-align: center;
+}
+button {
+    border: none;
+    padding: .7rem .8rem;
+    border-radius: .5rem;
+    outline: none;
+    width: 10rem;
+    font-size: 1rem;
+    background: #000;
+    color: #FFF;   
+}
