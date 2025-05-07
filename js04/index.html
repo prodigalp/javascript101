@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Functions</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <form method="post" class="ledger">
+                <p class="header">Number Base</p>
+                <div class="colNum">
+                    <span>Enter number&nbsp;&nbsp;:</span>
+                    <input type="number" class="numOne" id="numOne" placeholder="0123456789">
+                </div>     
+                <div class="colNum">
+                    <span>Enter number&nbsp;&nbsp;:</span>
+                    <input type="number" class="numTwo" id="numTwo" placeholder="0123456789">
+                </div>
+                <div class="colNum">
+                    <span>Answer&nbsp;&nbsp;:</span>
+                    <input type="number" class="numAns" id="numAns" readonly>
+                </div>
+                <div class="colbtn">
+                    <button type="button" onclick="btnChk()">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>
