@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MDAS App's</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <p class="header">MDAS Application</p>
+        <main id="wrapper">
+            <section class="math">
+                <section class="math__leftSide">
+                    <select name="ops" id="ops">
+                        <option value="" selected disabled>Choose here</option>
+                        <option value="add">Addition</option>
+                        <option value="sub">Subtraction</option>
+                        <option value="mul">Multiplication</option>
+                        <option value="divs">Division</option>
+                    </select>
+                </section>
+                <section class="math__rightSide">
+                    <form action="#" class="math__inputs">
+                        <div>
+                            <input type="number" class="numOne" id="numOne" placeholder="Enter 1st value">
+                        </div>
+                        <div class="">
+                            <input type="number" class="numTwo" id="numTwo" placeholder="Enter 2nd value">
+                        </div>
+                        <div>
+                            <input type="number" class="numAns" id="numAns" placeholder="Answer" disabled>
+                        </div>
+                    </form>
+                </section>   
+            </section>
+           <section class="math__btnSide">
+                <button type="button" onclick="compute()">Submit</button>
+                <button type="reset" onclick="wipe()">Reset</button>
+           </section>
+        </main>
+    <script src="script.js"></script>
+    </body>
+</html>
