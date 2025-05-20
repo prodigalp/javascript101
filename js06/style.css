@@ -16,4 +16,53 @@
 body {
     background: var(--color-linear);
     font-family: var(--default-font);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+#wrapper {
+    max-width: 550px;
+    width: 90%;
+    background: rgb(10, 30, 38);
+    padding: var(--default-padding);
+    box-shadow: var(--default-shadow);
+    border-radius: var(--default-bradius);
+    color: rgb(41, 205, 246);
+    border: 10px SOLID #FFF;
+}
+.grade__header {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: var(--default-margin);
+    text-shadow: 1px 1px 1px#FFF;
+}
+.grade__prelim,
+.grade__midterm,
+.grade__prefinals,
+.grade__finals, 
+.grade__average {
+    width: 100%;
+    padding: .5rem 1rem;   
+    border: none;
+    outline: none;
+    border: .03px SOLID grey;
+    margin-bottom: var(--default-margin);
+    border-radius: var(--default-bradius);
+    background: rgb(236, 246, 248);
+    font-size: 1.15rem;
+}
+.btnGroup {
+    text-align: center;
+}
+.btnSend,
+.btnReset {
+    border: none;
+    outline: none;
+    padding: calc(var(--default-padding) - .3rem);
+    width: 10rem;
+    font-size: 1.2rem;
+    border-radius: var(--default-bradius);
+    background: rgb(41, 205, 246);
 }
