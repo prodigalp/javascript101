@@ -10,19 +10,19 @@
         <main id="wrapper">
             <div class="grade">
                 <div class="grade__header">College Grading System</div>
-                <form action="" class="grade__input">
+                <form action="#" class="grade__input">
                     <input type="number" class="grade__prelim" placeholder="Prelim">
                     <input type="number" class="grade__midterm" placeholder="Midterm">
                     <input type="number" class="grade__prefinals" placeholder="Pre-Finals">
                     <input type="number" class="grade__finals" placeholder="Finals">
-                    <input type="number" class="grade__average" disabled>
+                    <input type="number" class="grade__average" disabled placeholder="Average">
                 </form>
                 <div class="btnGroup">
-                    <button type="button" class="btnSend">Submit</button>
-``````````````
+                    <button type="button" class="btnSend" onclick="finals()">Submit</button>
+                    <button type="reset" class="btnReset" onclick="reSet()">Reset</button>
                 </div>
             </div>
         </main>
     <script src="script.js"></script>
     </body>
-</html>s
+</html>
