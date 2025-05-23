@@ -1,0 +1,62 @@
+:root {
+    --color-primary: rgb(105, 222, 243);
+    --color-secondary: #FFF;
+    --color-linear: linear-gradient(90deg, rgb(105, 222, 243), white);
+    --default-padding: 1rem;
+    --default-margin: 1rem;
+    --default-font: sans-serif;
+    --default-shadow: .2rem .2rem .2rem rgba(0, 0, 0, 0.2);
+    --default-bradius: .5rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--color-linear);
+    font-family: var(--default-font);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#wrapper {
+    /* width: 400px; */
+    max-width: 90%;
+    background: var(--color-secondary);
+    padding: var(--default-padding);
+    border-radius: var(--default-bradius);
+    box-shadow: var(--default-shadow);
+}
+.btnSize {
+    width: 15rem;
+    padding: var(--default-padding);
+    border-radius: var(--default-bradius);
+    border: none;
+    outline: none;
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+#parOne {
+    text-align: center;
+    padding: var(--default-padding);
+    /* background: #000; */
+    border: 1px SOLID #000;
+    border-radius: var(--default-bradius);
+    margin-bottom: var(--default-margin);
+    font-size: 1.3rem;
+}
+
+#btnPink { background: rgb(243, 4, 112); }
+#btnPink:hover { background: rgb(91, 2, 42); }
+
+#btnYel { background: rgb(255, 255, 23); }
+#btnYel:hover { background: rgb(102, 102, 2); }
+
+#btnBlue { background: rgb(2, 2, 224); }
+#btnBlue:hover { background: rgb(2, 2, 102); }
+
+.classtest {
+    background: blue;
+}

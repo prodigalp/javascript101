@@ -1,10 +1,25 @@
-document.querySelector("#btnPink").addEventListener("click", pinkBG);
-document.querySelector("#btnWhite").addEventListener("click", whiteBG);
+document.querySelector("#btnPink").addEventListener("mouseover", pinkBG);
+document.querySelector("#btnYel").addEventListener("mouseover", yelBG);
+document.querySelector("#btnBlue").addEventListener("mouseover", blueBG);
 
 function pinkBG() {
+    const pnk = document.querySelector("#btnPink");
+
     document.body.style.background = "pink"
+    pnk.style.cursor = "pointer";
 }
-function whiteBG() {
-    document.body.style.background = "white";
-    // document.body.style.background = ""
+function yelBG() {
+    const wh =  document.querySelector("#btnYel");
+
+    document.body.style.background = "yellow";
+    wh.style.cursor = "pointer";
+}
+function blueBG() {
+    const bl = document.querySelector("#btnBlue");
+
+    document.body.style.background = "blue";
+    bl.style.cursor = "pointer";
+}
+function testfunction() {
+    console.log("Working");
 }
