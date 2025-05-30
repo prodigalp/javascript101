@@ -18,14 +18,7 @@ function displayMessage() {
     namePerson.textContent = bucky.name;
     posPerson.textContent = bucky.position;
     salPerson.textContent = bucky.salary;
-
-    // mess.textContent = ella.name;
-    // mess.textContent = ella.name;
-    // mess.textContent = bucky.name;
-    // mess.textContent = bucky.position;
-    // mess.textContent = bucky.salary;
-}
-
+     
 // Test Object only!
 function fruits(color, size, length) {
     this.color = color;
@@ -35,3 +28,29 @@ function fruits(color, size, length) {
 // Test Object instance only!
 const apple = new fruits("Red", "Medium", "45inch");
 const melon = new fruits("Orange", "Large", "90inch");
+
+// mess.textContent = ella.name;
+    // mess.textContent = ella.name;
+    // mess.textContent = bucky.name;
+    // mess.textContent = bucky.position;
+    // mess.textContent = bucky.salary;
+}
+
+function laptop(brand, price, size) {
+    this.brand = brand;
+    this.price = price;
+    this.size = size;
+}
+
+const asus = new laptop("ROG", 45000, "17 inches");
+
+// Object Initializer   
+person = {
+    name: "Bucky Robers",
+    age: 17,
+    occupation: "Janitor",
+    salary: 45000
+}
+
+const business = new Array("Carwash", "Gasoline", "Buko Juice", "Sari-Sari Store");
+
