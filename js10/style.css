@@ -1,0 +1,30 @@
+:root {
+    --primary-color: #FAF8CC;
+    --secondary-color: gray;
+    --linear-color: linear-gradient(120deg, rgb(249, 102, 215), white);
+    --default-margin: 1rem;
+    --default-padding: 1rem;
+    --default-shadow: .2rem .2rem .2rem rgba(0,0,0,2);
+    --default-font: sans-serif;
+    --default-bradius: .5rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--linear-color);
+    font-family: var(--default-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#wrapper {
+    width: 500px;
+    max-width: 90%;
+    padding: var(--default-padding);
+    box-shadow: var(--default-shadow);
+    border-radius: var(--default-bradius);
+}
