@@ -1,0 +1,18 @@
+:root {
+    --primary-color: lightgray;
+    --secondary-color: #FFF;
+    --linear-color: linear-gradient(150deg, rgb(50, 245, 212), white);
+    --default-padding: 1rem;
+    --default-margin: 1rem;
+    --default-font: sans-serif;
+    --default-bradius: .5rem;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: var(--linear-color);
+    font-family: var(--default-font);
+}
