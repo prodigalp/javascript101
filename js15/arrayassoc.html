@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Assocative array</title>
+    </head>
+    <body>
+        <main id="wrapper">
+            <p class="parOne"></p>
+            <p class="parCal"></p>
+        </main>
+
+    <script>
+     
+      function dayNow() {
+            // Hours
+            let timer = new Date();
+            let hrs   = timer.getHours();
+            let min   = timer.getMinutes();
+            let sec   = timer.getSeconds();
+
+            // Complete Date
+            // Look to the table for proper date format
+            const optionDay = {
+                weekday: 'long',
+                month: 'long',
+                day: '2-digit',
+                year: 'numeric'
+            }
+            const optionLong = new Intl.DateTimeFormat('en-US', optionDay).format(timer);
+            
+
+            if(hrs < 10) {
+                hrs = "0" + hrs
+            }
+             if(min < 10) {
+                min = "0" + min;
+            }
+            if(sec < 10) {
+                sec = "0" + sec;
+            }
+
+            document.querySelector(".parOne").innerHTML = hrs + ": " + min + ": " +  sec;
+            document.querySelector(".parCal").innerHTML = optionLong
+      }
+    
+      
+
+      setInterval(dayNow, 1000);
+
+
+      
+    </script>
+    </body>
+</html>
